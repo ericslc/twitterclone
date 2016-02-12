@@ -9,36 +9,19 @@ $(document).ready(function(){
     $('.tweet-compose').height('21px');
       $('#tweet-controls').hide('click');
   });
-$('textarea').keyup(updateCount);
-function updateCount(){
-  var num = $(this).val().length;
-  var maxLength = 140;
-  var nums = maxLength - num;
-  $('.char').text(nums);
-
-    if(nums <= 10){
-      $('.char').addClass('red');
-    }
-    if(nums > 10){
-      $('.char').removeClass('red');
-    };
-
-
-
-  };
+    var maxLength = 140;
+    $('#tweet-place').keyup(function () {
+     var length = $(this).val().length;
+     var length = maxLength - length;
+     $('#chars').text(length);
+     if (length < 11) {
+       $('#chars').addClass('red');
+     }
+     if (length > 10) {
+       $('#chars').removeClass('red');
+     };
+   });
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-})
+ });
