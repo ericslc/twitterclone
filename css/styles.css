@@ -114,6 +114,7 @@ body {
 
 		#tweet-content {
 			padding-top: 0;
+
 		}
 
 	/* Compose Tweet */
@@ -129,9 +130,11 @@ body {
 	}
 		#tweet-controls {
 			text-align: right;
+			visibility: collapse;
 		}
 			#tweet-controls div {
 				display: inline-block;
+				visibility: collapse;
 			}
 			#char-count {
 				font-size: 14px;
@@ -258,5 +261,3 @@ body {
 				top: 0;
 				left: 0;
 			}
-
-
