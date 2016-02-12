@@ -130,12 +130,10 @@ body {
 	}
 		#tweet-controls {
 			text-align: right;
-			visibility: collapse;
-		}
+					}
 			#tweet-controls div {
 				display: inline-block;
-				visibility: collapse;
-			}
+						}
 			#char-count {
 				font-size: 14px;
 				color: #999;
