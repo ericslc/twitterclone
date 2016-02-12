@@ -9,12 +9,25 @@ $(document).ready(function(){
     $('.tweet-compose').height('21px');
       $('#tweet-controls').hide('click');
   });
+$('textarea').keyup(updateCount);
+function updateCount(){
+  var num = $(this).val().length;
   var maxLength = 140;
-  $('#char-count').keyUp(updateCount);
-  function updateCount(){
-    var count = $(this).val().length;
-    $('#char-count').text(count);
+  var nums = maxLength - num;
+  $('.char').text(nums);
+
+    if(nums <= 10){
+      $('.char').addClass('red');
+    }
+    if(nums > 10){
+      $('.char').removeClass('red');
+    };
+
+
+
   };
+
+
 
 
 
