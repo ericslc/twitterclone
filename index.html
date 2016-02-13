@@ -43,7 +43,7 @@
 					<!-- STEP 5: When the user successfully inputs characters and clicks the “Tweet” button, a new tweet should be created and added to the tweet stream in the main column, using the user’s fake profile image in the top left and username/fullname. -->
 					<!-- HINT: jQuery ".prepend" method -->
 					<div class="tweet">
-						<div class="content">
+						<div class="content" id="twitters">
 							<img class="avatar" src="img/damenleeturks.jpg" />
 							<strong class="fullname">My BFF</strong>
 							<span class="username">@mybff</span>
@@ -55,7 +55,7 @@
 							<!-- STEP 6: The tweet actions below should only show up when you hover over the tweet. Otherwise, they should be hidden. -->
 							<!-- HINT: CSS ":hover" pseudo element -->
 							<div class="tweet-actions">
-								<ul>
+								<ul class="mini">
 									<li><span class="icon action-reply"></span> Reply</li>
 									<li><span class="icon action-retweet"></span> Retweet</li>
 									<li><span class="icon action-favorite"></span> Favorite</li>
